@@ -12,9 +12,9 @@ var orderDetail;
 var itemimeg = '';
 
 if (addetion === 'PEPPERONI') {
-  itemimeg = '<img src="/PEPPERONI.jpg"/>';
+  itemimeg = '<img src="PEPPERONI.jpg"/>';
 } else if (addetion === 'VEGETARIAN') {
-  itemimeg = '<img src="/VEGETARIAN.jpg"/>';
+  itemimeg = '<img src="VEGETARIAN.jpg"/>';
 }
 
   document.write(itemimeg);
