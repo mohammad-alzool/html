@@ -9,28 +9,28 @@ var noofp=prompt("how many pizza do you want?");
 
 var orderDetail;
 
+var itemimeg = '';
 
-  var orderDetail;
+if (addetion === 'PEPPERONI') {
+  itemimeg = '<img src="PEPPERONI.jpg"/>';
+} else if (addetion === 'VEGETARIAN') {
+  itemimeg = '<img src="VEGETARIAN.jpg"/>';
+}
 
-if (noofp > 1 && noofp < 3){
+  document.write(itemimeg);
+
+
+if (noofp >= 1 && noofp <= 3){
   orderDetail="Congrats you have 10% discount on your order!";
-} else if (noofp > 3 && noofp < 6){
+} else if (noofp >= 4 && noofp <= 6){
   orderDetail="Congrats you have 20% discount and free pepsi";
-} else if (noofp > 6 && noofp < 9999999){
+} else if (noofp >= 7 && noofp <= 9999999){
   orderDetail="Congrats you have 50% discount and free pepsi";
 } else {
   orderDetail="somthing wrong with your order!!!";
 }
 
-var itemimeg = '';
 
-if (addetion === 'PEPPERONI') {
-  itemimeg = '<img src="/img/PEPPERONI.jpg"/>';
-} else if (addetion === 'VEGETARIAN') {
-  itemimeg = '<img src="/img/VEGETARIAN.jpg"/>';
-}
-
-  document.write(itemimeg);
 
 document.write(orderDetail);
 document.getElementById("orderDetail").innerText=addetion
