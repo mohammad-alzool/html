@@ -16,7 +16,12 @@ if (addetion === 'PEPPERONI') {
 } else if (addetion === 'VEGETARIAN') {
   itemimeg = '<img src="VEGETARIAN.jpg"/>';
 }
+var result = ""
 
+for (var i = 0 ; i < noofp ; i++){
+  result=result+itemimeg;
+
+}
   document.write(itemimeg);
 
 
@@ -31,7 +36,7 @@ if (noofp >= 1 && noofp <= 3){
 }
 
 
-
+document.write(result);
 document.write(orderDetail);
 document.getElementById("orderDetail").innerText=addetion
 
